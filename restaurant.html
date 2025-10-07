@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Beef Upp!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="main-header">
+    <h1 class="logo">Let's Beef Upp!</h1>
+
+    <button class="hamburger" aria-label="Toggle menu">☰</button>
+
+    <!-- Use class instead of id -->
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">Reservations</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main_class">>**
+    <section class="welcome">
+      <h2>Welcome to Let's Beef Upp!</h2>
+      <p>Experience fine dining with a touch of elegance.</p>
+    </section>
+
+    <section class="menu">
+      <h2>Ready To Dig In To:</h2>
+      <ul>
+        <li>Filet Mignon with Red Wine Sauce</li>
+        <li>Pan-Seared Scallops with Garlic Butter</li>
+        <li>Truffle Mushroom Risotto</li>
+        <li>Lobster Thermidor</li>
+        <li>Crème Brûlée</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="paragraph">
+            <p>📍 Arwings Kodhek Rd, Nairobi</p>
+            <p>📞 +254 700 123 456</p>
+            <p>✉️ contact@beefy.com</p>
+    </div>
+  </footer>
+
+  <script>
+    // toggle menu visibility
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
